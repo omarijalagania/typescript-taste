@@ -92,4 +92,7 @@ const Button = styled.div`
   overflow: hidden;
   border-radius-bottom-left: 7px;
   border-radius-bottom-right: 7px;
+  &:hover {
+    background-color: #013220;
+  }
 `;
