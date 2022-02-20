@@ -30,9 +30,15 @@ const Container = styled.div`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   margin: 20px 15px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 7px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.02);
+  }
   @media ${device.mobileL} {
-    width: 95%;
-    height: 520px;
+    width: 90%;
   }
 `;
 
@@ -51,6 +57,7 @@ const Title = styled.div`
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
+  padding: 0 5px;
 `;
 
 const Description = styled.div`
@@ -82,4 +89,7 @@ const Button = styled.div`
   align-items: center;
   color: white;
   font-weight: lighter;
+  overflow: hidden;
+  border-radius-bottom-left: 7px;
+  border-radius-bottom-right: 7px;
 `;
